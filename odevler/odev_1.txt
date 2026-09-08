@@ -1,0 +1,177 @@
+JAVA UYGULAMA SORULARI
+
+Konu: Scanner, Diziler, if-else, else if, switch-case, for, for-each, break, continue, mantıksal operatörler ve metotlar
+
+## SORU 1 - ÖĞRENCİ NOT SİSTEMİ
+
+Kullanıcıdan aşağıdaki bilgileri Scanner kullanarak alınız:
+
+* Öğrencinin adı
+* Öğrencinin soyadı
+* Öğrencinin sınav notu (0-100 arasında)
+
+Girilen nota göre aşağıdaki işlemleri yapınız:
+
+90-100   : AA
+80-89    : BA
+70-79    : BB
+60-69    : CB
+50-59    : CC
+0-49     : FF
+
+Not 0-100 arasında değilse "Geçersiz not girdiniz." mesajını gösteriniz.
+
+Not geçerli ise öğrencinin bilgilerini ve harf notunu aşağıdaki gibi ekrana yazdırınız:
+
+Öğrenci: Ali Veli
+Not: 85
+Harf Notu: BA
+
+Ek olarak, öğrenci 50 ve üzeri aldıysa "Öğrenci başarılı." mesajı, 50'nin altında aldıysa "Öğrenci başarısız." mesajı gösterilmelidir.
+
+## SORU 2 - DİZİDE SAYI ANALİZİ
+
+Aşağıdaki diziyi kullanınız:
+
+int[] numbers = {12, 5, 8, 21, 4, 16, 9, 30, 7, 18};
+
+Bu dizi üzerinde aşağıdaki işlemleri gerçekleştiriniz:
+
+1. Dizideki tüm elemanları ekrana yazdırınız.
+2. Dizideki çift sayıların kaç tane olduğunu bulunuz.
+3. Dizideki tek sayıların kaç tane olduğunu bulunuz.
+4. Dizideki sayıların toplamını hesaplayınız.
+5. Dizideki en büyük sayıyı bulunuz.
+6. Dizide 10'dan büyük olan sayıları ekrana yazdırınız.
+7. 10'dan küçük olan sayıları yazdırırken 5 değerini atlayınız. Bunun için continue kullanınız.
+
+Sonuçları aşağıdaki gibi anlaşılır şekilde ekrana yazdırınız:
+
+Çift sayı adedi: ...
+Tek sayı adedi: ...
+Toplam: ...
+En büyük sayı: ...
+
+10'dan büyük sayılar:
+...
+
+## SORU 3 - KULLANICI GİRİŞ SİSTEMİ
+
+Basit bir kullanıcı giriş sistemi oluşturunuz.
+
+Programın içerisinde aşağıdaki bilgiler sabit olarak tanımlı olsun:
+
+username = "admin"
+password = "12345"
+
+Kullanıcıdan Scanner ile kullanıcı adı ve şifre bilgilerini alınız.
+
+Aşağıdaki kurallara göre işlem yapınız:
+
+* Kullanıcı adı ve şifre doğruysa:
+  "Giriş başarılı."
+
+* Kullanıcı adı doğru, şifre yanlışsa:
+  "Şifre yanlış."
+
+* Kullanıcı adı yanlış, şifre doğruysa:
+  "Kullanıcı adı yanlış."
+
+* İkisi de yanlışsa:
+  "Kullanıcı adı ve şifre yanlış."
+
+Ek olarak kullanıcı adı veya şifre boş bırakılırsa:
+
+"Lütfen kullanıcı adı ve şifre alanlarını doldurunuz."
+
+mesajı gösterilmelidir.
+
+Programda &&, || ve ! mantıksal operatörlerinden uygun olanları kullanınız.
+
+Not:
+String karşılaştırması yaparken Java'da == yerine equals() kullanımına dikkat ediniz.
+
+## SORU 4 - HAFTALIK KARGO SİSTEMİ
+
+Bir kargo firmasının haftanın günlerine göre çalışma durumunu gösteren bir program yazınız.
+
+Kullanıcıdan Scanner ile 1-7 arasında bir gün numarası alınız.
+
+Gün numaralarına göre:
+
+1 -> Pazartesi
+2 -> Salı
+3 -> Çarşamba
+4 -> Perşembe
+5 -> Cuma
+6 -> Cumartesi
+7 -> Pazar
+
+Bilgilerini kullanarak switch-case yapısı ile günün adını ekrana yazdırınız.
+
+Ayrıca aşağıdaki kuralları uygulayınız:
+
+* Pazartesi-Cuma arasında kargo gönderimi yapılabilsin.
+* Cumartesi günü "Kargo sadece 12:00'ye kadar gönderilebilir." mesajı gösterilsin.
+* Pazar günü "Bugün kargo gönderimi yapılamamaktadır." mesajı gösterilsin.
+* 1-7 arasında olmayan bir değer girilirse "Geçersiz gün numarası." mesajı gösterilsin.
+
+Örnek:
+
+Gün numarasını giriniz: 6
+
+Bugün: Cumartesi
+Kargo sadece 12:00'ye kadar gönderilebilir.
+
+## SORU 5 - ÜRÜN VE FİYAT ANALİZİ
+
+Aşağıdaki ürün ve fiyat dizilerini kullanınız:
+
+String[] products = {
+"Laptop",
+"Telefon",
+"Tablet",
+"Kulaklık",
+"Klavye"
+};
+
+double[] prices = {
+35000,
+25000,
+12000,
+2500,
+1500
+};
+
+Program kullanıcıdan bir bütçe bilgisi alsın.
+
+Daha sonra dizileri kullanarak aşağıdaki işlemleri gerçekleştiriniz:
+
+1. Tüm ürünleri ve fiyatlarını ekrana yazdırınız.
+
+2. Kullanıcının bütçesinden daha ucuz veya bütçesine eşit olan ürünleri ekrana yazdırınız.
+
+3. Kullanıcının bütçesinden daha pahalı olan ürünleri ekrana yazdırmayınız.
+
+4. En pahalı ürünü ve fiyatını bulunuz.
+
+5. En ucuz ürünü ve fiyatını bulunuz.
+
+6. Ürünlerden herhangi birinin fiyatı 20.000 TL'den büyükse "Yüksek fiyatlı ürün bulundu." mesajını gösteriniz.
+
+7. Bütçeye uygun hiçbir ürün yoksa:
+   "Bütçenize uygun ürün bulunamadı."
+   mesajını gösteriniz.
+
+Örnek:
+
+Bütçenizi giriniz: 15000
+
+Bütçenize uygun ürünler:
+Tablet - 12000 TL
+Kulaklık - 2500 TL
+Klavye - 1500 TL
+
+En pahalı ürün: Laptop - 35000 TL
+En ucuz ürün: Klavye - 1500 TL
+Yüksek fiyatlı ürün bulundu.
