@@ -144,6 +144,8 @@ public class Days4Main {
         System.out.println("User Name: " + userName);
 
 
+        objUser.twoNumberCall();
+
     }
 
 }

@@ -1,5 +1,7 @@
 package days_4;
 
+import java.util.Scanner;
+
 public class User {
 
     // Kullanıcı Login
@@ -26,6 +28,22 @@ public class User {
 
     public String getUserName(int userID) {
         return "Ali Bilmem";
+    }
+
+    public void twoNumberCall() {
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Lütfen sayı -1 giriniz:");
+        double number = scanner.nextDouble();
+
+        System.out.println("Lütfen sayı -2 giriniz:");
+        double number2 = scanner.nextDouble();
+
+        System.out.println(number + number2);
+        System.out.println(number - number2);
+        System.out.println(number * number2);
+        System.out.println(number / number2);
+
     }
 
 }

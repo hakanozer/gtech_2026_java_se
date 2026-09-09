@@ -1,5 +1,7 @@
 package days_2;
 
+import days_5.Customer;
+
 public class Days2Main {
 
     // Tek satırlı açıklama
@@ -78,6 +80,10 @@ public class Days2Main {
             System.out.println("false");
         }
 
+
+        Customer customer = new Customer();
+        customer.call1();
+        System.out.println(customer.data2);
 
 
     }
