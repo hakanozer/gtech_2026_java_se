@@ -1,0 +1,190 @@
+JAVA PROGRAMLAMA - UYGULAMA SORULARI
+
+Soru 1 - Encapsulation ve Getter/Setter
+
+Student adında bir sınıf oluşturunuz.
+
+Sınıfta aşağıdaki özellikleri private olarak tanımlayınız:
+
+- int id
+- String name
+- String surname
+- String email
+
+Her özellik için getter ve setter metotlarını oluşturunuz.
+
+Daha sonra main metodunda bir Student nesnesi oluşturunuz.
+
+Öğrencinin bilgilerini setter metotlarını kullanarak aşağıdaki şekilde giriniz:
+
+id: 10
+name: Ahmet
+surname: Yılmaz
+email: ahmet@mail.com
+
+Son olarak getter metotlarını kullanarak öğrencinin tüm bilgilerini ekrana yazdırınız.
+
+
+--------------------------------------------------
+
+
+Soru 2 - Constructor
+
+Book adında bir sınıf oluşturunuz.
+
+Sınıfta aşağıdaki özellikler bulunmalıdır:
+
+- String title
+- String author
+- int price
+
+Sınıf içerisinde;
+
+1. Parametresiz bir constructor oluşturunuz.
+2. title, author ve price bilgilerini parametre olarak alan bir constructor oluşturunuz.
+3. Tüm özellikler için getter ve setter metotlarını oluşturunuz.
+
+main metodunda;
+
+- Birinci Book nesnesini parametresiz constructor kullanarak oluşturunuz ve setter metotları ile bilgilerini giriniz.
+- İkinci Book nesnesini parametreli constructor kullanarak oluşturunuz.
+- Her iki kitabın bilgilerini ekrana yazdırınız.
+
+
+--------------------------------------------------
+
+
+Soru 3 - Inheritance ve Method Overriding
+
+Animal adında bir üst sınıf oluşturunuz.
+
+Animal sınıfında aşağıdaki metodu oluşturunuz:
+
+public void sound()
+
+Bu metot ekrana:
+
+Animal sound
+
+yazdırmalıdır.
+
+Daha sonra Animal sınıfından kalıtım alan iki sınıf oluşturunuz:
+
+- Dog
+- Cat
+
+Dog sınıfında sound() metodunu override ederek:
+
+Dog hav hav
+
+mesajını yazdırınız.
+
+Cat sınıfında sound() metodunu override ederek:
+
+Cat miyav
+
+mesajını yazdırınız.
+
+main metodunda bir Dog ve bir Cat nesnesi oluşturunuz ve sound() metotlarını çağırınız.
+
+
+--------------------------------------------------
+
+
+Soru 4 - Polymorphism
+
+Aşağıdaki sınıf yapısını oluşturunuz:
+
+Employee
+   |
+   |---- Developer
+   |
+   |---- Tester
+
+Employee sınıfında aşağıdaki metodu oluşturunuz:
+
+public void work()
+
+Bu metot ekrana:
+
+Employee çalışıyor
+
+yazdırmalıdır.
+
+Developer sınıfı Employee sınıfından kalıtım almalıdır.
+
+Developer sınıfında work() metodunu override ederek:
+
+Developer kod yazıyor
+
+mesajını yazdırınız.
+
+Tester sınıfı Employee sınıfından kalıtım almalıdır.
+
+Tester sınıfında work() metodunu override ederek:
+
+Tester test yapıyor
+
+mesajını yazdırınız.
+
+Daha sonra main metodundan bağımsız olarak aşağıdaki yapıya benzer bir metot oluşturunuz:
+
+static void employeeCall(Employee employee)
+
+Bu metodun içerisinde employee nesnesinin work() metodunu çağırınız.
+
+main metodunda Developer ve Tester nesnelerini oluşturunuz ve employeeCall() metoduna gönderiniz.
+
+Program çalıştırıldığında aşağıdaki çıktının alınması beklenmektedir:
+
+Developer kod yazıyor
+Tester test yapıyor
+
+
+--------------------------------------------------
+
+
+Soru 5 - Array, Scanner ve OOP
+
+Product adında bir sınıf oluşturunuz.
+
+Sınıfta aşağıdaki özellikleri private olarak tanımlayınız:
+
+- String title
+- int price
+- String description
+
+Tüm özellikler için getter ve setter metotlarını oluşturunuz.
+
+Ayrıca aşağıdaki constructor'ı oluşturunuz:
+
+Product(String title, int price, String description)
+
+Daha sonra main metodunda Scanner kullanarak kullanıcıdan kaç adet ürün gireceğini alınız.
+
+Girilen ürün sayısı kadar Product nesnesi oluşturunuz.
+
+Her ürün için kullanıcıdan aşağıdaki bilgileri alınız:
+
+- Ürün başlığı
+- Ürün fiyatı
+- Ürün açıklaması
+
+Oluşturduğunuz Product nesnelerini bir Product[] içerisinde saklayınız.
+
+Tüm ürünlerin bilgilerini for-each döngüsü kullanarak ekrana yazdırınız.
+
+Örnek çıktı formatı:
+
+Ürün: Laptop
+Fiyat: 35000
+Açıklama: 16 GB RAM
+----------------
+
+Ürün: Mouse
+Fiyat: 1000
+Açıklama: Kablosuz mouse
+----------------
+
+Not:
+Bu soruda Scanner, Array, Class, Object, Constructor, Encapsulation, Getter/Setter ve for-each konularının birlikte kullanılması beklenmektedir.
