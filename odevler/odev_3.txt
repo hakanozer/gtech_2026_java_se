@@ -1,0 +1,319 @@
+JAVA UYGULAMA EGZERSİZLERİ
+
+Aşağıdaki soruları Java programlama dili kullanarak kodlayınız. Soruları çözerken class, object, constructor, method, ArrayList, Scanner, inheritance, interface, polymorphism ve dosya işlemleri gibi derste öğrendiğiniz konuları uygun şekilde kullanınız.
+
+SORU 1 - ÖĞRENCİ BİLGİ SİSTEMİ
+
+Student adında bir sınıf oluşturunuz.
+
+Sınıfta aşağıdaki bilgiler bulunmalıdır:
+
+* Öğrenci adı
+* Öğrenci soyadı
+* Öğrenci numarası
+* Öğrenci yaşı
+
+Öğrencinin bilgilerini ekrana yazdıran showInfo() metodunu oluşturunuz.
+
+Ayrıca öğrencinin 18 yaşından büyük olup olmadığını kontrol eden isAdult() metodunu oluşturunuz.
+
+main metodu içerisinde kullanıcıdan bilgileri alarak en az 3 öğrenci oluşturunuz ve öğrencilerin bilgilerini ekrana yazdırınız.
+
+SORU 2 - ÜRÜN YÖNETİM SİSTEMİ
+
+Product adında bir sınıf oluşturunuz.
+
+Sınıfta aşağıdaki bilgiler bulunmalıdır:
+
+* Ürün adı
+* Ürün fiyatı
+* Stok miktarı
+
+main metodu içerisinde ArrayList kullanarak ürünleri saklayınız.
+
+Kullanıcıdan sürekli olarak ürün bilgisi alınız.
+
+Kullanıcı ürün adı olarak "-" girdiğinde veri girişini sonlandırınız.
+
+Program sonunda:
+
+1. Tüm ürünleri listeleyiniz.
+2. Stok miktarı 0 olan ürünleri gösteriniz.
+3. Fiyatı 1000 TL'den fazla olan ürünleri gösteriniz.
+4. Toplam stok miktarını hesaplayıp ekrana yazdırınız.
+
+SORU 3 - BANKA HESABI
+
+BankAccount adında bir sınıf oluşturunuz.
+
+Sınıfta aşağıdaki bilgiler bulunmalıdır:
+
+* Hesap numarası
+* Hesap sahibi
+* Bakiye
+
+Aşağıdaki metotları oluşturunuz:
+
+* deposit(double amount)
+* withdraw(double amount)
+* showBalance()
+
+Para çekme işlemi sırasında hesapta yeterli bakiye yoksa kullanıcıya uygun bir mesaj gösteriniz.
+
+Program içerisinde aşağıdaki menüyü oluşturunuz:
+
+1 - Para yatır
+2 - Para çek
+3 - Bakiye görüntüle
+4 - Çıkış
+
+Kullanıcı 4 seçeneğini seçene kadar program çalışmaya devam etmelidir.
+
+SORU 4 - PERSONEL YÖNETİMİ VE INHERITANCE
+
+Employee adında bir üst sınıf oluşturunuz.
+
+Employee sınıfında aşağıdaki bilgiler bulunmalıdır:
+
+* Ad
+* Soyad
+* Maaş
+
+Personelin bilgilerini ekrana yazdıran showInfo() metodunu oluşturunuz.
+
+Daha sonra Employee sınıfından aşağıdaki iki sınıfı türetiniz:
+
+* Developer
+* Manager
+
+Developer sınıfında programlama dili bilgisi bulunmalıdır.
+
+Manager sınıfında ekip büyüklüğü bilgisi bulunmalıdır.
+
+Developer ve Manager sınıflarında showInfo() metodunu override ederek kendilerine ait bilgileri de ekrana yazdırınız.
+
+main metodu içerisinde en az 2 Developer ve 2 Manager nesnesi oluşturunuz ve bilgilerini ekrana yazdırınız.
+
+SORU 5 - ARAÇ KİRALAMA SİSTEMİ
+
+Vehicle adında bir üst sınıf oluşturunuz.
+
+Vehicle sınıfında aşağıdaki bilgiler bulunmalıdır:
+
+* Marka
+* Model
+* Yıl
+* Günlük kira ücreti
+
+Aşağıdaki metodu oluşturunuz:
+
+calculateRentalPrice(int days)
+
+Vehicle sınıfından aşağıdaki sınıfları türetiniz:
+
+* Car
+* Motorcycle
+* Truck
+
+Her araç türü için calculateRentalPrice() metodunu override ediniz.
+
+Kiralama ücretleri aşağıdaki şekilde hesaplanmalıdır:
+
+Car:
+Normal günlük ücret üzerinden hesaplama yapılacaktır.
+
+Motorcycle:
+Normal ücret üzerinden %10 indirim uygulanacaktır.
+
+Truck:
+Normal ücret üzerinden %20 ek ücret uygulanacaktır.
+
+main metodu içerisinde farklı araç türlerinden nesneler oluşturunuz ve 5 günlük kiralama ücretlerini hesaplayarak ekrana yazdırınız.
+
+SORU 6 - ÖDEME SİSTEMİ VE INTERFACE
+
+Payment adında bir interface oluşturunuz.
+
+Interface içerisinde aşağıdaki metot bulunmalıdır:
+
+pay(double amount)
+
+Payment interface'ini aşağıdaki sınıflarda implement ediniz:
+
+* CreditCardPayment
+* CashPayment
+* EftPayment
+
+Her sınıf kendi ödeme yöntemine uygun şekilde pay() metodunu gerçekleştirmelidir.
+
+Örneğin program çalıştığında aşağıdaki gibi sonuçlar üretilebilir:
+
+Kredi kartı ile 1500 TL ödeme yapıldı.
+Nakit olarak 1500 TL ödeme yapıldı.
+EFT ile 1500 TL ödeme yapıldı.
+
+main metodu içerisinde kullanıcıdan ödeme yöntemini ve ödeme tutarını alınız.
+
+Seçilen ödeme yöntemine göre ilgili sınıfın pay() metodunu çalıştırınız.
+
+SORU 7 - HAYVANAT BAHÇESİ
+
+Animal adında bir üst sınıf oluşturunuz.
+
+Animal sınıfında aşağıdaki bilgiler bulunmalıdır:
+
+* Hayvan adı
+* Hayvan yaşı
+
+AnimalSound adında aşağıdaki metoda sahip bir interface oluşturunuz:
+
+makeSound()
+
+Animal sınıfından aşağıdaki sınıfları türetiniz:
+
+* Dog
+* Cat
+* Bird
+
+Dog, Cat ve Bird sınıfları AnimalSound interface'ini implement etmelidir.
+
+Her hayvan için makeSound() metodunu farklı şekilde gerçekleştiriniz.
+
+Örneğin:
+
+Dog -> Hav hav
+Cat -> Miyav
+Bird -> Cik cik
+
+main metodu içerisinde ArrayList kullanarak farklı hayvanları aynı listede saklayınız.
+
+Listedeki tüm hayvanların bilgilerini ve çıkardıkları sesleri ekrana yazdırınız.
+
+SORU 8 - ÖĞRENCİLERİ DOSYAYA KAYDETME
+
+Öğrenci kayıt sistemi oluşturunuz.
+
+Student adında bir sınıf oluşturunuz.
+
+Student sınıfında aşağıdaki bilgiler bulunmalıdır:
+
+* Ad
+* Soyad
+* Öğrenci numarası
+* Not
+
+Kullanıcıdan öğrenci bilgilerini sürekli olarak alınız.
+
+Kullanıcı öğrenci adı olarak "-" girdiğinde veri girişini sonlandırınız.
+
+Girilen öğrencileri bir TXT dosyasına kaydediniz.
+
+Dosyada bilgiler aşağıdaki formata benzer şekilde tutulmalıdır:
+
+Ahmet;Yılmaz;1001;85
+Ayşe;Kaya;1002;72
+Mehmet;Demir;1003;91
+
+Program sonunda dosyayı okuyarak:
+
+1. Tüm öğrencileri listeleyiniz.
+2. Notu 50'nin altında olan öğrencileri gösteriniz.
+3. Sınıf not ortalamasını hesaplayınız.
+4. En yüksek notu alan öğrenciyi gösteriniz.
+
+SORU 9 - LOGGER SİSTEMİ
+
+Logger adında bir interface oluşturunuz.
+
+Interface içerisinde aşağıdaki metot bulunmalıdır:
+
+log(String message)
+
+Logger interface'ini aşağıdaki iki sınıfta implement ediniz:
+
+* ConsoleLogger
+* FileLogger
+
+ConsoleLogger kullanıldığında mesaj ekrana yazdırılmalıdır.
+
+FileLogger kullanıldığında mesaj "logs.txt" isimli dosyaya eklenmelidir.
+
+Kullanıcıdan sürekli olarak log mesajı alınız.
+
+Kullanıcı "-" girdiğinde veri girişini sonlandırınız.
+
+Program başlangıcında kullanıcıya aşağıdaki seçenekleri sununuz:
+
+1 - Console Logger
+2 - File Logger
+
+Seçilen logger türüne göre girilen mesajları ekrana veya dosyaya kaydediniz.
+
+Program sonunda dosyada bulunan log kayıtlarını okuyarak ekrana yazdırınız.
+
+SORU 10 - PERSONEL YÖNETİM SİSTEMİ
+
+Bu soruda derste öğrendiğiniz konuları bir arada kullanarak bir Personel Yönetim Sistemi geliştiriniz.
+
+Aşağıdaki sınıf yapısını oluşturunuz:
+
+Person
+|
++-- Employee
+|
++-- Developer
+|
++-- Manager
+
+Person sınıfında:
+
+* Ad
+* Soyad
+
+Employee sınıfında:
+
+* Personel numarası
+* Temel maaş
+
+Developer sınıfında:
+
+* Programlama dili
+
+Manager sınıfında:
+
+* Ekip büyüklüğü
+
+bulunmalıdır.
+
+Ayrıca aşağıdaki interface'i oluşturunuz:
+
+Payable
+
+Bu interface içerisinde:
+
+calculateSalary()
+
+metodu bulunmalıdır.
+
+Developer ve Manager sınıfları Payable interface'ini implement etmelidir.
+
+Developer ve Manager sınıflarında maaş hesaplama işlemini farklı şekilde gerçekleştiriniz.
+
+Program içerisinde aşağıdaki menüyü oluşturunuz:
+
+1 - Personel ekle
+2 - Personelleri listele
+3 - Personel ara
+4 - Maaşları listele
+5 - Toplam maaş giderini göster
+6 - Personelleri dosyaya kaydet
+7 - Dosyadan personelleri oku
+8 - Çıkış
+
+Personeller ArrayList içerisinde tutulmalıdır.
+
+Personeller dosyaya kaydedilebilmeli ve dosyadan okunabilmelidir.
+
+Program içerisinde inheritance, interface, method overriding ve polymorphism kavramlarını uygun şekilde kullanınız.
+
+Programın mümkün olduğunca nesne yönelimli bir yapıda olmasına dikkat ediniz.
